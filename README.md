@@ -31,12 +31,14 @@ The server will be running at http://localhost:3000
 ## API Testing
 ### Post
 Route : http://localhost:3000/api/v1/posts
+
 Body example:
 ```
 {
     "title": "my first post"
     "body": "body of first post"
 }
+```
 Response:
 Creates a post. Returns `"status": "success"` along with the ID and the body of the post if post succeeds, `"status": "failed"` if it fails
 
