@@ -40,29 +40,39 @@ Body example:
 }
 ```
 Response:
+
 Creates a post. Returns `"status": "success"` along with the ID and the body of the post if post succeeds, `"status": "failed"` if it fails
 
 ### Get
 Route : http://localhost:3000/api/v1/posts
+
 Response:
+
 Returns all of the posts
 
 Route : http://localhost:3000/api/v1/posts/<ID of the post>
+
 Response :
+
 Returns a specific post
 
 ### Update
 Route : http://localhost:3000/api/v1/posts/<ID of the post>
+
 Body example:
 ```
 {
     "title": "my first post updated"
     "body": "body of first post updated"
 }
+```
 Response:
+
 Update the contents of a specific post. Returns `"status": "success"` along with the ID and the body of the updated post if update succeeds, `"status": "failed"` if it fails
 
 ### Delete
 Route : http://localhost:3000/api/v1/posts/<ID of the post>
+
 Response :
+
 Deletes a specific post. Returns `"status": "success"`if delete succeeds, `"status": "failed"` if it fails
