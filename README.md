@@ -10,13 +10,13 @@ User session is stored in Redis. User requests are load balanced in Nginx
 ## Getting Started
 
 Install Docker and Docker Compose on your machine  
-Docker containers:
+Docker containers used:
 
 | Image | Tag |
 | --- | --- |
 | Node | 15 |
 | Mongo | latest |
-| Redis | atest |
+| Redis | latest |
 | Nginx | stable-alpine |
 
 
