@@ -50,14 +50,14 @@ Response:
 
 Returns all of the posts
 
-Route : http://localhost:3000/api/v1/posts/<ID of the post>
+Route : http://localhost:3000/api/v1/posts/**ID of the post**
 
 Response :
 
 Returns a specific post
 
 ### Update
-Route : http://localhost:3000/api/v1/posts/<ID of the post>
+Route : http://localhost:3000/api/v1/posts/**ID of the post**
 
 Body example:
 ```
@@ -71,7 +71,7 @@ Response:
 Update the contents of a specific post. Returns `"status": "success"` along with the ID and the body of the updated post if update succeeds, `"status": "failed"` if it fails
 
 ### Delete
-Route : http://localhost:3000/api/v1/posts/<ID of the post>
+Route : http://localhost:3000/api/v1/posts/**ID of the post**
 
 Response :
 
