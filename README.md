@@ -20,8 +20,7 @@ Docker containers used:
 | Nginx | stable-alpine |
 
 
-Docker volume:
-1. Mongo
+Docker volume: Mongo
 
 There are two environments:
 
@@ -38,11 +37,11 @@ The server will be running at http://localhost:3000
 
 | Method | Route  | Response |
 | --- | --- | --- |
-| Create | http://localhost:3000/api/v1/posts | Creates a post. Returns `"status": "success"` along with the ID and the body of the post if post succeeds, `"status": "failed"` if it fails |
-| Read All Posts |  http://localhost:3000/api/v1/posts/ | Returns all of the posts |
-| Read Specific Post |  http://localhost:3000/api/v1/posts/ `<ID of the post>` | Returns a specific post referenced from post ID |
-| Update |  http://localhost:3000/api/v1/posts/ `<ID of the post>` | Updates the contents of a specific post. Returns `"status": "success"` along with the ID and the body of the updated post if update succeeds, `"status": "failed"` if it fails |
-| Delete |  http://localhost:3000/api/v1/posts/ `<ID of the post>` | Deletes a specific post. Returns `"status": "success"`if delete succeeds, `"status": "failed"` if it fails |
+| Create | /api/v1/posts | Creates a post. Returns `"status": "success"` along with the ID and the body of the post if post succeeds, `"status": "failed"` if it fails |
+| Read All Posts |  /api/v1/posts/ | Returns all of the posts |
+| Read Specific Post |  /api/v1/posts/ `<ID of the post>` | Returns a specific post referenced from post ID |
+| Update | /api/v1/posts/ `<ID of the post>` | Updates the contents of a specific post. Returns `"status": "success"` along with the ID and the body of the updated post if update succeeds, `"status": "failed"` if it fails |
+| Delete |  /api/v1/posts/ `<ID of the post>` | Deletes a specific post. Returns `"status": "success"`if delete succeeds, `"status": "failed"` if it fails |
 
 Body format example:
 ```
